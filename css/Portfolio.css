@@ -1,18 +1,87 @@
 @charset "utf-8";
+
 /*css reset*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -20,34 +89,57 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 html {
     line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
     list-style: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-caption,th,td{
+
+caption,
+th,
+td {
     text-align: left;
     font-weight: normal;
     vertical-align: middle;
 }
-blockquote, q {
+
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
-a img{
+
+a img {
     border: none;
 }
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 
@@ -92,14 +184,15 @@ body {
     position: relative;
     text-transform: uppercase;
 }
-.fixed-top li:hover{
+
+.fixed-top li:hover {
     background: #DAE7EB;
 }
 
 .fixed-top a {
     text-decoration: none;
     text-align: center;
-    margin:5px;
+    margin: 5px;
 }
 
 .fixed-top div {
@@ -108,15 +201,17 @@ body {
     color: #696969;
 
 }
-.fixed-top .big{
+
+.fixed-top .big {
     font-size: 16px;
     margin-bottom: 5px;
 }
+
 .fixed-top .small {
     font-size: 8px;
     font-weight: 500;
     color: #A8A8A8;
-   
+
 }
 
 .dropdown {
@@ -136,8 +231,8 @@ body {
     display: none;
     height: 50px;
     font-size: 15px;
-    padding-top:18px;
-    font-weight: bold; 
+    padding-top: 18px;
+    font-weight: bold;
 }
 
 .dropdown li:hover {
@@ -198,7 +293,7 @@ h1 {
 }
 
 .profilebox {
-    
+
     width: 80%;
     padding: 20px;
 }
@@ -220,7 +315,7 @@ h1 {
     flex-direction: column;
     width: 63%;
     line-height: 1.8;
-    padding:10px;
+    padding: 10px;
 }
 
 .profiletext h2 {
@@ -287,44 +382,51 @@ h1 {
     color: #1E3A5A;
     font-weight: 600;
 }
-.resumetext ul{
-    list-style-type:circle;
-    padding-left:50px;
+
+.resumetext ul {
+    list-style-type: circle;
+    padding-left: 50px;
     padding-top: 10px;
 
 }
+
 .resumetext li {
     color: #323232;
 
 }
+
 .skills {
     background-color: #DDDDDD;
-    min-height:100vh;  
+    min-height: 100vh;
 }
-.skillsblock{
+
+.skillsblock {
     width: 90%;
-    margin:0 auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 50px;
 }
-.skillsbox{
+
+.skillsbox {
     width: 28%;
-    margin:20px;
+    margin: 20px;
 }
-.skills hr{
+
+.skills hr {
     width: 100%;
-    margin:15px 0 15px 0;
+    margin: 15px 0 15px 0;
 }
+
 .skills h2 {
     font-size: 24px;
     font-weight: bold;
     color: #40407a;
 }
 
-.skills p{
+.skills p {
     letter-spacing: 2px;
     line-height: 1.5;
 }
@@ -347,7 +449,7 @@ h1 {
     background-size: cover;
 }
 
-.portfoliolist h2 a{
+.portfoliolist h2 a {
     text-decoration: none;
     line-height: 2.5;
     letter-spacing: 2px;
@@ -391,21 +493,24 @@ h1 {
     margin: 20px;
     border: 10px #FFFFFF solid;
 }
-.posterboxpic{
+
+.posterboxpic {
     float: left;
     width: 50%;
-    
+
 }
+
 .posterboxpic img {
     width: 100%;
 }
-.posterboxword{
+
+.posterboxword {
     float: right;
-    padding-left:10px;
+    padding-left: 10px;
     width: 50%;
 }
 
-.posterboxword h3{
+.posterboxword h3 {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -414,11 +519,12 @@ h1 {
     letter-spacing: 2px;
     color: #3C3C3C;
 }
+
 .posterboxword p {
     text-align: left;
     line-height: 1.8;
     color: #4D4D4D;
-    margin:0px;
+    margin: 0px;
 }
 
 
@@ -442,7 +548,7 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+
 }
 
 
@@ -469,7 +575,7 @@ h1 {
 
 .logointroduce {
     width: 40%;
-    
+
 }
 
 .logoint {
@@ -507,9 +613,11 @@ h1 {
     letter-spacing: 2px;
     font-weight: bold;
 }
-.logoclothpic{
+
+.logoclothpic {
     width: 300px;
 }
+
 .logoclothpic img {
     width: 100%;
 }
@@ -544,7 +652,7 @@ h1 {
 .videoblock {
     width: 90%;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 .iframe {
@@ -553,16 +661,19 @@ h1 {
     margin-top: 30px;
     width: 60%;
 }
-.iframe iframe{
-    width:705px;
-    height:420px; 
+
+.iframe iframe {
+    width: 705px;
+    height: 420px;
 }
-.videobox{
+
+.videobox {
     display: flex;
     flex-direction: column;
     float: right;
     width: 40%;
 }
+
 .videoword {
     background-color: #F6F6F6;
     width: 300px;
@@ -591,37 +702,40 @@ h1 {
 }
 
 
-.contactblock { 
+.contactblock {
     display: flex;
     width: 80%;
-    margin:0 auto;
+    margin: 0 auto;
     padding-bottom: 20px;
-    
+
 }
 
-.contactpic{
+.contactpic {
     width: 40%;
     text-align: center;
     float: left;
 }
 
-.contactimg{
+.contactimg {
     width: 50%;
-    margin:0 auto;
+    margin: 0 auto;
 }
-.contactimg img{
+
+.contactimg img {
     width: 100%;
 }
-.contacttext{
+
+.contacttext {
     display: inline-block;
-    text-align:left;
-    margin:0 auto;
+    text-align: left;
+    margin: 0 auto;
     font-weight: bold;
     letter-spacing: 2px;
     line-height: 1.5;
 }
-.contactbox{
-    
+
+.contactbox {
+
     width: 60%;
     float: right;
 }
@@ -630,13 +744,14 @@ h1 {
 form {
     line-height: 2em;
 }
-.label{
+
+.label {
     width: 100px;
     height: 30px;
 }
 
 
-.row{
+.row {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 5px;
@@ -653,7 +768,8 @@ form {
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
 }
-.extra{
+
+.extra {
     width: 20%;
     margin-left: 80%;
 
@@ -661,7 +777,7 @@ form {
 
 
 
-.send{
+.send {
     text-align: right;
 }
 
@@ -696,74 +812,95 @@ footer div {
 }
 
 
-@media screen and (min-width:481px) and (max-width:768px){
-    .fixed-top ul{
+@media screen and (min-width:481px) and (max-width:768px) {
+    .fixed-top ul {
+
         padding-right: 0;
     }
-    .portfoliolist{
+
+    .fixed-top li {
+        width: 95px;
+    }
+
+    .portfoliolist {
         height: 80vh;
     }
-    .profilephoto{
+
+    .profilephoto {
         width: 100%;
     }
 
     .profiletext {
         float: left;
         width: 100%;
-        padding:0px;
+        padding: 0px;
         margin-top: 10px;
-        
+
     }
-    .resumeblock{
+
+    .resumeblock {
         width: 90%;
     }
-    .resumemenu{
+
+    .resumemenu {
         width: 100%;
     }
-    .resumebox{
+
+    .resumebox {
         float: left;
         width: 100%;
     }
-    .skillsbox{
+
+    .skillsbox {
         width: 60%;
     }
-    .posterbox{
+
+    .posterbox {
         width: 80%;
-    } 
-    .logoblock{
+    }
+
+    .logoblock {
         width: 100%;
         justify-content: center;
     }
-    .logopic{
+
+    .logopic {
         width: 80%;
     }
-    .logointroduce{
-        width: 300px;  
+
+    .logointroduce {
+        width: 300px;
     }
-    .videoblock{
+
+    .videoblock {
         width: 100%;
         margin-bottom: 50px;
     }
-    .iframe{
-        width:100%;
+
+    .iframe {
+        width: 100%;
     }
-    
-    .videobox{
+
+    .videobox {
         float: left;
         width: 100%;
     }
+
     .videoword {
         margin-top: 20px;
     }
-    .contactblock{
+
+    .contactblock {
         flex-direction: column;
         align-items: center;
         width: 80%;
     }
-    .contactpic{
+
+    .contactpic {
         width: 80%;
     }
-    .contactbox{
+
+    .contactbox {
         float: left;
         width: 100%;
     }
@@ -775,121 +912,147 @@ footer div {
     img {
         width: 100%;
     }
+
     .fixed-top ul {
         padding-right: 10px;
     }
+
     .fixed-top li {
         width: 70px;
     }
+
     .fixed-top .big {
-        font-size: 14px;  
+        font-size: 14px;
     }
+
     .dropdown li {
-        font-size: 13px;      
+        font-size: 13px;
     }
+
     .header {
         max-width: 480px;
         padding-top: 90vh;
     }
-    .header p{
+
+    .header p {
         font-size: 28px;
     }
+
     .portfoliolist {
-        height:100vh;  
+        height: 100vh;
     }
-    .portfoliolist h2{
+
+    .portfoliolist h2 {
         margin-top: 30px;
     }
-    .profilebox{
+
+    .profilebox {
         width: 90%;
     }
-    .profilephoto{
+
+    .profilephoto {
         width: 100%;
     }
-    .profiletext{
+
+    .profiletext {
         width: 100%;
         padding-top: 20px;
 
     }
-    
-    
-    .resumeblock{
+
+
+    .resumeblock {
         width: 85%;
-        
+
     }
-    .resumemenu{
+
+    .resumemenu {
         width: 100%;
     }
-    
-    .resumebox{
-       width: 100%;
+
+    .resumebox {
+        width: 100%;
     }
-    
-    .skillsbox{
+
+    .skillsbox {
         width: 80%;
     }
-    .word , .word1 , .word2{
+
+    .word,
+    .word1,
+    .word2 {
         font-size: 24px;
     }
-    .posterbox{
+
+    .posterbox {
         width: 90%;
         margin: 0px;
         margin-bottom: 20px;
     }
-    
-    .posterboxword{
+
+    .posterboxword {
         padding-left: 10px;
-        
+
     }
-    .posterboxword h3{
+
+    .posterboxword h3 {
         padding: 10px;
         font-size: 14px;
     }
-    .posterboxword p{
+
+    .posterboxword p {
         font-size: 10px;
     }
-    
 
-    
 
-    .logoblock{
+
+
+    .logoblock {
         justify-content: center;
         width: 90%;
     }
-    .logopic{
+
+    .logopic {
         width: 90%;
     }
-    .logointroduce{
+
+    .logointroduce {
         width: 300px;
     }
-    
-    .videoblock{
+
+    .videoblock {
         width: 100%;
     }
-    .iframe iframe{
+
+    .iframe iframe {
         height: 300px;
     }
-    .iframe{
+
+    .iframe {
         width: 100%;
     }
-    .videobox{
+
+    .videobox {
         width: 97.5%;
-        
+
     }
-    .videoword{
+
+    .videoword {
         margin-top: 30px;
     }
-    
-    .contactblock{
+
+    .contactblock {
         width: 80%;
         flex-direction: column;
         align-items: center;
     }
-    .contactpic{
+
+    .contactpic {
         width: 100%;
         margin-bottom: 30px;
     }
-    .contactbox{
+
+    .contactbox {
         float: left;
         width: 100%;
     }
