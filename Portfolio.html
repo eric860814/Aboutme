@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Chi-Wei's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="Assets/css/Portfolio.css" rel="stylesheet" type="text/css">
+    <script src="Assets/js/jquery-3.4.1.min.js"></script>
+    <script src="Assets/js/Portfolio.js"></script>
+</head>
+
+<body>
+    
+    <nav class="fixed-top">
+        <ul>
+            <li><a href="#profile" id="profile">
+                    <div class="big">自介</div>
+                    <div class="small">profile</div>
+                </a></li>
+            <li><a href="#resume" id="resume">
+                    <div class="big">經歷</div>
+                    <div class="small">resume</div>
+                </a></li>
+            <li><a href="#skills" id="skills">
+                    <div class="big">技能</div>
+                    <div class="small">skills</div>
+                </a></li>
+            <li><a href="#portfolio" id="portfolio">
+                    <div class="big">作品集</div>
+                    <div class="small">portfolio</div>
+                </a>
+                <ul class="dropdown">
+                    <li id="poster">Poster</li>
+                    <li id="logo">Logo</li>
+                    <li id="video">Video</li>
+                </ul>
+            </li>
+            <li><a href="#contact" id="contact">
+                    <div class="big">聯繫</div>
+                    <div class="small">contact</div>
+                </a></li>
+        </ul>
+    </nav>
+    <div class="header" id="head">
+        <p>I'm Chi Wei.</p>
+    </div>
+    <div class="profile">
+        <h1>profile</h1>
+        <div class="profilebox">
+            <div class="profilephoto">
+                <img src="Assets\images\123.jpg" alt="Profile Photo">
+            </div>
+            <div class="profiletext">
+                <h2><b>呂季韋</b></h2>
+                <p>我是一個熱愛挑戰和享受團隊工作的人，畢業於亞洲大學資訊工程系。在大學為了找尋自己的興趣和定位，所以參加許多自治性團體，擔任過許多職位，如美宣長和器材長，詳細如下(學校經歷)。</p>
+                <p>在大學這四年學到很多的技能和知識，發現對設計滿有想法的，加上自己對coding也是滿有研究的，因此決定朝網頁前端邁進，也會透過網路上的資源，去補足欠缺的地方，如Javascript、Jquery、Bootstrap、Vue.js、Git、Scss 等技能，期許自己在未來可以成為獨當一面的前端工程師。</p>
+            </div>
+        </div>
+    </div>
+    <div class="resume">
+        <h1>resume</h1>
+        <div class="resumeblock">
+            <div class="resumemenu">
+                <p>Eduction</p>
+            </div>
+            <div class="resumebox">
+                <div class="resumetext">
+                    <h3>系學會美宣長，2017 年 1 月 - 2017 年 12 月</h3>
+                    <div>從活動參加者變成幕後，才發現每個活動是多麼的不容易。在系學會中，也了解到組織的運作，發現每個職位都缺一不可。</div>
+                    <ul>
+                        <li>活動海報設計</li>
+                        <li>活動經驗(電腦健檢、資工周、系烤...)</li>
+                    </ul>
+                </div>
+                <div class="resumetext">
+                    <h3>熱舞社器材長，2017 年 7 月 - 2018 年 6 月</h3>
+                    <div>大學社團真的學到很多，不僅僅只有人際溝通、團隊工作，還有街舞背後的歷史和文化意義。</div>
+                    <ul>
+                        <li>器材使用和估算</li>
+                        <li>音樂剪輯、影片剪輯</li>
+                        <li>各活動經驗(迎新、成發、Battle...)</li>
+                        <li>活動燈光、音控</li>
+                        <li>廠商設備接洽</li>
+                    </ul>
+                </div>
+                <div class="resumetext">
+                    <h3>畢委會美宣長，2018 年 9 月 - 2019 年 6 月</h3>
+                    <div>相較於系會，畢委會處理的事務都是校級性，活動上、行政上有更多東西需要去籌備和規劃，算是難得的經驗。</div>
+                    <ul>
+                        <li>畢委會LOGO設計、衣服設計</li>
+                        <li>各活動經驗(演講、音樂節、舞會)</li>
+                        <li>各活動海報、邀請卡、名牌...</li>
+                        <li>印刷經驗</li>
+                        <li>畢冊封面設計</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skills" id="skills">
+        <h1>skills</h1>
+        <div class="skillsblock">
+            <div class="skillsbox">
+                <h2>HTML / CSS / JQuery</h2>
+                <hr>
+                <p>會手刻RWD手機板網頁設計<br>
+                    會使用JQuery打造互動性網頁效果<br>
+                    <br>
+                    目前正在學習JQuery、CSS3動畫、Bootstrap 4、SCSS、JavaScript
+                </p>
+            </div>
+            <div class="skillsbox">
+                <h2>Photoshop / Illustrator</h2>
+                <hr>
+                <p>Illustrator 處理向量圖形和排版<br>
+                Photoshop 主要用於修圖及調整圖像</p>
+            </div>
+            <div class="skillsbox">
+                <h2>其他</h2>
+                <hr>
+                <p>Premiere<br>
+                    會使用轉場效果、上字幕
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio">
+        <div class="portfoliolist">
+            <h1>portfolio</h1>
+            <h2><a href="#poster" id="poster">01. poster design</a><br>
+                <a href="#logo" id="logo">02. logo design</a><br>
+                <a href="#video" id="video">03. video</a></h2>
+        </div>
+        <div class="poster">
+            <div class="word"><span>01</span> Poster Design</div>
+            <div class="posterblock">
+                <div class="posterbox">
+                    <div class="posterboxpic">
+                        <img src="Assets\images\01-01.jpg">
+                    </div>
+                    <div class="posterboxword">
+                        <h3>畢業舞會</h3>
+                        <p>胡桃鉗，是這次舞會主題，而我想跳脫一般舞會端莊的感覺，整體運用手繪感的圖案和文字，主題上則是利用花和草去做點綴和包裝，呈現出活潑又不失典雅的清新感覺。</p>
+                    </div>
+                </div>
+                <div class="posterbox">
+                    <div class="posterboxpic">
+                        <img src="Assets\images\02-01.jpg">
+                    </div>
+                    <div class="posterboxword">
+                        <h3>畢業歌徵選</h3>
+                        <p>徵選就彷彿是在黑茫茫的夜空中，尋找那顆最閃亮的星,所以選用星空當背景，資訊上則利用一些線條，來塑造出徵稿的意象。</p>
+                    </div>
+                </div>
+                <div class="posterbox">
+                    <div class="posterboxpic">
+                        <img src="Assets\images\05-01.jpg">
+                    </div>
+                    <div class="posterboxword">
+                        <h3>職涯講座</h3>
+                        <p>海報設計不外乎就是要傳遞資訊，並促使其產生行動，所以在版面上就簡單、不加太多裝飾，方便大家閱讀。</p>
+                    </div>
+                </div>
+                <div class="posterbox">
+                    <div class="posterboxpic">
+                        <img src="Assets\images\06-01.jpg">
+                    </div>
+                    <div class="posterboxword">
+                        <h3>烈日鬆一下</h3>
+                        <p>在炎炎夏日的午後，偶爾偷閒吃個下午茶，是個不錯的主意。海報上選用暖色調漸層的背景，並以藍綠色的文字去調和酷熱的天氣，整體給人愜意舒服的感覺，讓人好想嘗一口甜而不膩的鬆餅。</p>
+                    </div>
+                </div>
+                <div class="posterbox">
+                    <div class="posterboxpic">
+                        <img src="Assets\images\07-01.jpg">
+                    </div>
+                    <div class="posterboxword">
+                        <h3>電腦健檢</h3>
+                        <p>這次選用比較繽紛的顏色，去打破資工以往枯燥乏味的印象，藉此拉近彼此的距離，並增加親和力，字體上雖然比較無趣，但也顯現出我們的專業。</p>
+                    </div>
+                </div>
+                <div class="posterbox">
+                    <div class="posterboxpic">
+                        <img src="Assets\images\08-01.jpg">
+                    </div>
+                    <div class="posterboxword">
+                        <h3>資工圓圖</h3>
+                        <p>看這個標題可能還滿難猜得出這是什麼活動吧? 沒錯，這是系上煮火鍋的海報，利用簡單的圖和文字，給人一種圓滿和溫暖的感覺阿~</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <div class="word1"><span>02</span> Logo Design</div>
+            <div class="logoblock">
+                <div class="logopic">
+                    <img src="Assets\images\LOGO(終)白.png">
+                </div>
+                <div class="logointroduce">
+                    <div class="logoint">設計理念</div>
+                    <div class="logointword">
+                        以時間為主軸<br>說明大學時間是由你規劃<br>利用畢業袍上的領巾作為指針<br>資訊上則以哥德式的字體<br>營造出時鐘的制式和我們的嚴謹<br>最後以一頂學士帽作為指標<br>強調出畢業和時間的重要性
+                    </div>
+                    <div class="logocloth">衣服</div>
+                    <div class="logoclothpic">
+                        <img src="Assets\images\clothes1.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <div class="word2"><span>03</span> Video</div>
+            <div class="videoblock">
+                <div class="iframe">
+                    <iframe src="https://www.youtube.com/embed/FidSgc06RG4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="videobox">
+                    <div class="videoword">
+                        這是我們熱舞社去年的影片<br>
+                        剪輯工具為Premiere<br>
+                        主要負責影片的淡入和淡出<br>
+                        以及LOGO浮水印的置入<br>
+                        另外也有協助前導片的剪輯
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <h1>contact</h1>
+        <div class="contactblock">
+            <div class="contactpic">
+                <div class="contactimg">
+                    <img src="Assets\images\contact.png">
+                </div>
+                <div class="contacttext">
+                    <span></span>
+                    <p>Mail:ericlu0814@gmail.com</p>
+                </div>
+            </div>
+            <div class="contactbox">
+                <form action="MAILTO:ericlu0814@gmail.com?subject=Hello! Wei!" onsubmit="alert('表單送出')" method="post" enctype="text/plain">
+                    <div class="row">
+                        <span class="label">Name</span>
+                        <input class="formcon" type="text" required />
+                    </div>
+                    <div class="row">
+                        <span class="label">Mail</span>
+                        <input class="formcon" type="email" required />
+                    </div>
+                    <div class="row">
+                        <span class="label">Message</span>
+                        <textarea class="formcon" rows="3" type="text" required></textarea>
+                    </div>
+                    <br>
+                    <div class="row ">
+                        <span class="send"></span>
+                        <input class="formcon extra" type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p>Copyright © 2019 Chi-Wei </p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
