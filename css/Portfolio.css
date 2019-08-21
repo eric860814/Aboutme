@@ -1,0 +1,897 @@
+@charset "utf-8";
+/*css reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+html {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption,th,td{
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+a img{
+    border: none;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    font-family: 'Biryani', '微軟正黑體', sans-serif;
+}
+
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background: #FFFFFF;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.fixed-top ul {
+    float: right;
+    display: inline-block;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.fixed-top li {
+    width: 100px;
+    float: left;
+    position: relative;
+    text-transform: uppercase;
+}
+.fixed-top li:hover{
+    background: #DAE7EB;
+}
+
+.fixed-top a {
+    text-decoration: none;
+    text-align: center;
+    margin:5px;
+}
+
+.fixed-top div {
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #696969;
+
+}
+.fixed-top .big{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.fixed-top .small {
+    font-size: 8px;
+    font-weight: 500;
+    color: #A8A8A8;
+   
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    padding: 0;
+
+}
+
+.dropdown li {
+    background: #FFFFFF;
+    color: #717171;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+    height: 50px;
+    font-size: 15px;
+    padding-top:18px;
+    font-weight: bold; 
+}
+
+.dropdown li:hover {
+    background: #C3DEE6;
+}
+
+
+li:hover>.dropdown li {
+    display: block;
+}
+
+
+
+
+
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding-top: 85vh;
+    padding-right: 5vw;
+    background: #37A8FF url(../images/bg0.jpg)no-repeat fixed top;
+    background-size: cover;
+    background-position: bottom center;
+    overflow: hidden;
+    text-align: right;
+}
+
+.header p {
+    color: white;
+    font-family: Microsoft JhengHei;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+.profile {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.profilebox {
+    
+    width: 80%;
+    padding: 20px;
+}
+
+.profilephoto {
+    display: flex;
+    float: left;
+    width: 35%;
+}
+
+.profilephoto img {
+    width: 100%;
+    border-radius: 3%;
+}
+
+.profiletext {
+    display: flex;
+    float: right;
+    flex-direction: column;
+    width: 63%;
+    line-height: 1.8;
+    padding:10px;
+}
+
+.profiletext h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profiletext p {
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E8E8E8;
+}
+
+
+.resumeblock {
+    width: 70%;
+    padding-bottom: 50px;
+
+}
+
+.resumemenu {
+    display: flex;
+    width: 22%;
+    float: left;
+}
+
+.resumemenu p {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+
+}
+
+.resumebox {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 75%;
+}
+
+.resumetext {
+    padding-bottom: 40px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.resumetext h3 {
+    color: #016BB1;
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.resumetext div {
+    color: #1E3A5A;
+    font-weight: 600;
+}
+.resumetext ul{
+    list-style-type:circle;
+    padding-left:50px;
+    padding-top: 10px;
+
+}
+.resumetext li {
+    color: #323232;
+
+}
+.skills {
+    background-color: #DDDDDD;
+    min-height:100vh;  
+}
+.skillsblock{
+    width: 90%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.skillsbox{
+    width: 28%;
+    margin:20px;
+}
+.skills hr{
+    width: 100%;
+    margin:15px 0 15px 0;
+}
+.skills h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #40407a;
+}
+
+.skills p{
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.portfoliolist {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    background: url(../images/000.jpg)no-repeat;
+    background-size: cover;
+}
+
+.portfoliolist h2 a{
+    text-decoration: none;
+    line-height: 2.5;
+    letter-spacing: 2px;
+    font-size: 22px;
+    color: #313131;
+}
+
+
+
+.poster {
+    background-color: #E0E0E0;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.posterblock {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.word {
+    color: #1A4179;
+    font-style: oblique;
+    font-size: 30px;
+    margin: 80px 0 30px 50px;
+    font-weight: bold;
+
+}
+
+.word span {
+    text-decoration: underline;
+}
+
+.posterbox {
+    display: inline-block;
+    background-color: #FFFFFF;
+    width: 40%;
+    margin: 20px;
+    border: 10px #FFFFFF solid;
+}
+.posterboxpic{
+    float: left;
+    width: 50%;
+    
+}
+.posterboxpic img {
+    width: 100%;
+}
+.posterboxword{
+    float: right;
+    padding-left:10px;
+    width: 50%;
+}
+
+.posterboxword h3{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+    color: #3C3C3C;
+}
+.posterboxword p {
+    text-align: left;
+    line-height: 1.8;
+    color: #4D4D4D;
+    margin:0px;
+}
+
+
+
+
+
+
+
+
+.logo {
+    background-color: #A6A6A6;
+    min-height: 100vh;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.logoblock {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+
+.word1 {
+    color: #FFFFFF;
+    font-style: oblique;
+    font-size: 30px;
+    margin: 80px 0 30px 50px;
+    font-weight: bold;
+}
+
+.word1 span {
+    text-decoration: underline;
+}
+
+.logopic {
+    width: 50%;
+    margin-top: 30PX;
+}
+
+.logopic img {
+    width: 100%;
+}
+
+.logointroduce {
+    width: 40%;
+    
+}
+
+.logoint {
+
+    font-style: oblique;
+    font-size: 30px;
+    padding-top: 23px;
+    margin-left: 20px;
+    height: 50px;
+    color: #454545;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.logointword {
+    background-color: #454545;
+    width: 300px;
+    height: 220px;
+    color: #FFFFFF;
+    text-align: left;
+    line-height: 1.9;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.logocloth {
+    font-style: oblique;
+    font-size: 30px;
+    padding-top: 23px;
+    margin-left: 20px;
+    height: 50px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.logoclothpic{
+    width: 300px;
+}
+.logoclothpic img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.video {
+    background-color: #E7E7E7;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.word2 {
+    color: #363636;
+    font-style: oblique;
+    font-size: 30px;
+    margin: 80px 0 20px 50px;
+    font-weight: bold;
+}
+
+.word2 span {
+    text-decoration: underline;
+}
+
+.videoblock {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.iframe {
+    display: flex;
+    float: left;
+    margin-top: 30px;
+    width: 60%;
+}
+.iframe iframe{
+    width:705px;
+    height:420px; 
+}
+.videobox{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 40%;
+}
+.videoword {
+    background-color: #F6F6F6;
+    width: 300px;
+    height: 220px;
+    color: #444444;
+    text-align: left;
+    line-height: 1.9;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding: 25px;
+    margin-top: 100px;
+    box-shadow: 5px 10px #DEDEDE;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+.contact {
+    background-color: #F6F6F6;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.contactblock { 
+    display: flex;
+    width: 80%;
+    margin:0 auto;
+    padding-bottom: 20px;
+    
+}
+
+.contactpic{
+    width: 40%;
+    text-align: center;
+    float: left;
+}
+
+.contactimg{
+    width: 50%;
+    margin:0 auto;
+}
+.contactimg img{
+    width: 100%;
+}
+.contacttext{
+    display: inline-block;
+    text-align:left;
+    margin:0 auto;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.contactbox{
+    
+    width: 60%;
+    float: right;
+}
+
+
+form {
+    line-height: 2em;
+}
+.label{
+    width: 100px;
+    height: 30px;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+}
+
+.formcon {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+.extra{
+    width: 20%;
+    margin-left: 80%;
+
+}
+
+
+
+.send{
+    text-align: right;
+}
+
+
+
+
+
+
+
+hr {
+    color: rgba(146, 146, 146, 1.00);
+    width: 50%;
+    margin: 32px auto;
+    border-style: solid;
+}
+
+
+footer {
+    display: inline-block;
+    background-color: #2B2B2B;
+    font-family: source-sans-pro, sans-serif;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+
+
+}
+
+
+footer div {
+    color: #FFFFFF;
+}
+
+
+@media screen and (min-width:481px) and (max-width:768px){
+    .fixed-top ul{
+        padding-right: 0;
+    }
+    .portfoliolist{
+        height: 80vh;
+    }
+    .profilephoto{
+        width: 100%;
+    }
+
+    .profiletext {
+        float: left;
+        width: 100%;
+        padding:0px;
+        margin-top: 10px;
+        
+    }
+    .resumeblock{
+        width: 90%;
+    }
+    .resumemenu{
+        width: 100%;
+    }
+    .resumebox{
+        float: left;
+        width: 100%;
+    }
+    .skillsbox{
+        width: 60%;
+    }
+    .posterbox{
+        width: 80%;
+    } 
+    .logoblock{
+        width: 100%;
+        justify-content: center;
+    }
+    .logopic{
+        width: 80%;
+    }
+    .logointroduce{
+        width: 300px;  
+    }
+    .videoblock{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .iframe{
+        width:100%;
+    }
+    
+    .videobox{
+        float: left;
+        width: 100%;
+    }
+    .videoword {
+        margin-top: 20px;
+    }
+    .contactblock{
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .contactpic{
+        width: 80%;
+    }
+    .contactbox{
+        float: left;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    img {
+        width: 100%;
+    }
+    .fixed-top ul {
+        padding-right: 10px;
+    }
+    .fixed-top li {
+        width: 70px;
+    }
+    .fixed-top .big {
+        font-size: 14px;  
+    }
+    .dropdown li {
+        font-size: 13px;      
+    }
+    .header {
+        max-width: 480px;
+        padding-top: 90vh;
+    }
+    .header p{
+        font-size: 28px;
+    }
+    .portfoliolist {
+        height:100vh;  
+    }
+    .portfoliolist h2{
+        margin-top: 30px;
+    }
+    .profilebox{
+        width: 90%;
+    }
+    .profilephoto{
+        width: 100%;
+    }
+    .profiletext{
+        width: 100%;
+        padding-top: 20px;
+
+    }
+    
+    
+    .resumeblock{
+        width: 85%;
+        
+    }
+    .resumemenu{
+        width: 100%;
+    }
+    
+    .resumebox{
+       width: 100%;
+    }
+    
+    .skillsbox{
+        width: 80%;
+    }
+    .word , .word1 , .word2{
+        font-size: 24px;
+    }
+    .posterbox{
+        width: 90%;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .posterboxword{
+        padding-left: 10px;
+        
+    }
+    .posterboxword h3{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .posterboxword p{
+        font-size: 10px;
+    }
+    
+
+    
+
+    .logoblock{
+        justify-content: center;
+        width: 90%;
+    }
+    .logopic{
+        width: 90%;
+    }
+    .logointroduce{
+        width: 300px;
+    }
+    
+    .videoblock{
+        width: 100%;
+    }
+    .iframe iframe{
+        height: 300px;
+    }
+    .iframe{
+        width: 100%;
+    }
+    .videobox{
+        width: 97.5%;
+        
+    }
+    .videoword{
+        margin-top: 30px;
+    }
+    
+    .contactblock{
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactpic{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .contactbox{
+        float: left;
+        width: 100%;
+    }
+
+}
