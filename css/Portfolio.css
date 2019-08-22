@@ -331,6 +331,7 @@ h1 {
 
 
 .resume {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -341,19 +342,20 @@ h1 {
 .resumeblock {
     width: 70%;
     padding-bottom: 50px;
-
+    margin:0 auto;
 }
 
 .resumemenu {
-    display: flex;
     width: 22%;
     float: left;
+    padding-bottom: 10px;
+    display: none;
+    text-align: center;
 }
 
 .resumemenu p {
     font-size: 26px;
     font-weight: bold;
-    margin-bottom: 15px;
     letter-spacing: 2px;
 
 }
@@ -369,6 +371,8 @@ h1 {
     padding-bottom: 40px;
     line-height: 1.5;
     letter-spacing: 1px;
+    overflow: auto;
+    display: none;
 }
 
 .resumetext h3 {
@@ -492,13 +496,16 @@ h1 {
     width: 40%;
     margin: 20px;
     border: 10px #FFFFFF solid;
+    box-shadow: none;
+    transition: box-shadow 300ms,transform 300ms;
 }
 
 .posterboxpic {
     float: left;
     width: 50%;
-
+    
 }
+
 
 .posterboxpic img {
     width: 100%;
@@ -844,6 +851,7 @@ footer div {
 
     .resumemenu {
         width: 100%;
+        text-align: left;
     }
 
     .resumebox {
@@ -967,6 +975,7 @@ footer div {
     }
 
     .resumemenu {
+        text-align: left;
         width: 100%;
     }
 
