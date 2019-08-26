@@ -293,12 +293,11 @@ h1 {
 }
 
 .profilebox {
-
+    padding-bottom: 50px;
     width: 80%;
 }
 
 .profilephoto {
-    display: flex;
     float: left;
     width: 35%;
 }
@@ -958,7 +957,6 @@ footer div {
 
     .profilephoto {
         width: 100%;
-        height: 100%;
 
     }
     
@@ -985,7 +983,7 @@ footer div {
     }
 
     .skillsbox {
-        width: 85%;
+        width: 90%;
     }
 
     .word,
