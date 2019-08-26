@@ -916,9 +916,7 @@ footer div {
 
 @media screen and (max-width:480px) {
 
-    img {
-        width: 100%;
-    }
+   
 
     .fixed-top ul {
         padding-right: 10px;
@@ -959,7 +957,10 @@ footer div {
 
     .profilephoto {
         width: 100%;
+        height: auto;
+
     }
+    
 
     .profiletext {
         width: 100%;
@@ -983,7 +984,7 @@ footer div {
     }
 
     .skillsbox {
-        width: 80%;
+        width: 85%;
     }
 
     .word,
